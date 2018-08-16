@@ -50,7 +50,10 @@ public class GameController {
 	
 	private void updateGameStatus() {
 		Player winner = game.winner();
-		if (winner != Player.NONE)topLabel.setText("Player "+winner+" wins!");
+		if (winner != Player.NONE){
+			topLabel.setText("Player "+winner+" wins!");
+			centerPane.setDisable(true);
+		}
 		else if (game.isGameOver()) topLabel.setText("Draw. No winner.");
 		else topLabel.setText("Next Player: " + game.getNextPlayer());
 		
