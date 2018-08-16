@@ -3,11 +3,15 @@ package tictactoe;
 import java.util.function.Predicate;
 
 import javafx.beans.property.BooleanProperty;
-import javafx.beans.property.Property;
+
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.scene.Node;
 
-
+/**
+ * TicTacToeGame is about game that have 2 player take turns to marking the space with X or O 
+ * (if player1 is O, player2 is X). The player who succeeds in placing their marks 
+ * in a horizontal, vertical, or diagonal row wins the game.
+ */
 public class TicTacToeGame {
 	private final int boardsize;
 	/** View of the TicTacToe board. */
